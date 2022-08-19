@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #1F1D36;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#content {
+    color: #E9A6A6; 
+    position: relative;
+}
+
+#footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#mountain {
+    position: absolute;
+    height: 110vh;
+    opacity: 4%;
+    top: 0;
+    left: 0;
+}
+
+#space {
+    position: absolute;
+    height: 200vh;
+    opacity: 4%;
+    top: 0;
+    left: 0;
+}
+
+#main {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#row1 {
+    margin-top: 10em;
+}
+
+#row2 {
+    font-size: 3em;
+}
+
+#row3 {
+    margin-top: 15em;
+}
+
+#row4 {
+    margin-top: 9em;
+    background-color: #3F3351;
+    padding-left: 15em;
+    padding-right: 15em;
+    padding-bottom: 2.5em;
+    border-radius: 2em;
+    opacity: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    width: 50%;
+}
+
+#row5 {
+    margin-top: 5em;
+    background-color: #3F3351;
+    padding-left: 15em;
+    padding-right: 15em;
+    padding-bottom: 2.5em;
+    border-radius: 2em;
+    opacity: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    width: 50%;
+}
+
+#title {
+    font-size: 7em;
+    font-weight: 800;
+    opacity: 100;
+}
+
+.heading {
+    font-size: 4em;
+    font-weight: 600;
+    opacity: 100;
+}
+
+.description {
+    font-size: 2em;
+    opacity: 100;
+    text-decoration: underline;
+}
+
+.subheading {
+    font-size: 2em;
+    font-weight: 400;
+    opacity: 100;
+}
+
+.subtext {
+    font-size: 1.25em;
+    opacity: 100;
+}
+
+.down-arrow {
+    font-size: 4em;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
