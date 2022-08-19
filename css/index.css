@@ -143,3 +143,37 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width:800px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
+    #main {
+        width: 100vw;
+        margin: 0;
+    }
+
+    #title {
+        font-size: 4em;
+        font-weight: 800;
+        opacity: 100;
+    }
+    
+    #row4 {
+        margin-left: 0;
+        margin-right: 0.75em;
+        padding-left: 2em;
+        padding-right: 2em;
+        width: 70vw;
+    }
+
+    #row5 {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+        width: 70vw;
+    }
+}
