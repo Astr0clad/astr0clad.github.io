@@ -169,12 +169,86 @@ p {
     z-index: 100;
 }
 
-#project-toggle {
+#project-toggle, #render-toggle {
     position: absolute;
     top: 90%;
     left: 68%;
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.40);
     z-index: 100;
+}
+
+.projects {
+    display: none;
+    min-height: 90vh;
+    width: 100%;
+    width: fill-available;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.project {
+    width: 90%;
+    height: 18vh;
+    padding: 1rem;
+    border-style: solid;
+    border-color: var(--primary);
+    border-width: 4px;
+    border-radius: 1.75rem; 
+}
+
+.project-left {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1.25rem;
+}
+
+.project-right {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 1.25rem;
+}
+
+.project-right .project-info{
+    align-items: end;
+}
+
+.project-right .project-info h3, .project-right .project-info p{
+    text-align: right;
+}
+
+.project-cover {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.project h3 {
+    color: var(--text);
+    font-family: Urbanist;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    padding: 0;
+    margin: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -257,7 +331,7 @@ p {
         opacity: 0.9;
     }
 
-    #project-toggle {
+    #project-toggle, #render-toggle {
         font-size: 1rem;
         position: fixed;
         top: 90vh;
