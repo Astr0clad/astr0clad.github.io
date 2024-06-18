@@ -1,57 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
 
-    <head>
+    <link rel="stylesheet" href="css/index.css">
+</head>
 
-        <meta charset="UTF-8"/>
-        <title>Astr0clad</title>
-        <link rel="stylesheet" href="css/index.css"/>
-        <script src="https://kit.fontawesome.com/ffc67c83d8.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    </head>
-
-    <body>
-
-        <div id="content">      
-            
-            <div id="backdrop">
-                <img id="mountain" src="https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"/>
-                <img id="space" src="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
-            </div>
-
-            <div id="main">
-                <span id="row1">
-                    <p id="title">Astr0clad</p>
-                </span>
-                
-                <span id="row2">
-                    <a href="https://www.github.com/astr0clad"><i class="fa-brands fa-github"></i></a>
-                    <a href="discord://-/users/601560775550697491"><i class="fa-brands fa-discord"></i></a>
-                </span>
-                
-                <span id="row3">
-                    <i class="down-arrow fa-solid fa-angle-down fa-beat"></i>
-                </span>
-
-                <span id="row4">
-                    <p class="heading">About Me</p>
-                    <p class="subtext">Hello! My name is Astr0clad, and I am a crappy programmer and gamer. I primarly code in Python, 
-                        however I will also do some webdev from time to time. When playing games, I mostly play Valorant, Minecraft, 
-                        Rocket League, and the occasional game of Fall Guys</p>
-                </span>
-
-                <span id="row5">
-                    <p class="heading">Projects</p>
-                    <span id="portfolio">
-                        <a href="https://www.github.com/astr0clad" class="description"><i class="fa-brands fa-github"></i> Visit My Github Here</a>
-                    </span>
-                </span>
-            </div>
-
-            <div id="footer"><i class="fa-solid fa-copyright"></i> Copyright Astr0clad 2022</div>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a class="nav-link active" href="index.html"><i data-lucide="home"></i></a>
+            <a class="nav-link" href="work.html"><i data-lucide="briefcase-business"></i></a>
+            <a class="nav-link" href="contact.html"><i data-lucide="phone"></i></a>
         </div>
-        
-    </body>
+        <div class="heading">
+            <h2>Colin M.</h1>
+            <p>3D Artist & Developer</p>
+            <div class="button-pair">
+                <a href="work.html" style="text-decoration:none;">
+                    <div class="primary-button">My Work <i data-lucide="briefcase-business"></i></div>
+                </a>
+                <a href="contact.html" style="text-decoration:none;">
+                    <div class="secondary-button">Contact Me</div>
+                </a>
+            </div>
+        </div>
+        <div class="renders">
+            <img src="/static/lex.png" alt="lex" class="render" style="grid-area: 1 / 1 / 2 / 2;"/>
+            <img src="/static/hdritestrender.png" alt="swerve" class="render" style="grid-area: 1 / 2 / 2 / 4;"/>
+            <img src="/static/ondesk.png" alt="lex" class="render" style="grid-area: 1 / 4 / 2 / 5;"/>
+            <img src="/static/swerbonfloor.png" alt="lex" class="render" style="grid-area: 2 / 2 / 3 / 3;"/>
+            <img src="/static/csteaser.png" alt="lex" class="render" style="grid-area: 2 / 1 / 3 / 2;"/>
+            <img src="/static/101.png" alt="lex" class="render" style="grid-area: 2 / 3 / 3 / 5;"/>
+            <img src="/static/100.png" alt="pixels" class="render" style="grid-area: 3 / 1 / 4 / 3;"/>
+            <img src="/static/Coffee Warm.png" alt="donuts" class="render" style="grid-area: 3 / 3 / 4 / 4;"/>
+            <img src="/static/Demo.png" alt="ocean" class="render" style="grid-area: 3 / 4 / 4 / 5;"/>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
 
 </html>
