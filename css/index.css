@@ -9,7 +9,7 @@
 body {
     display: flex;
     width: auto;
-    height: auto;
+    min-height: 98vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -71,6 +71,7 @@ body {
     padding: 3.125rem 2.9375rem;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 0.9375rem;
     width: 20vw;
 }
@@ -81,7 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-    align-self: stretch; 
+    align-self: center; 
     width: 15vw;
 }
 
@@ -146,6 +147,7 @@ p {
 .renders {
     padding-top: 2.5vh;
     padding-right: 2.5vw;
+    padding-left: 2.1vw;
     width: fill-available;
     display: grid;
     grid-template-columns: repeat(4, 12vw);
@@ -177,15 +179,18 @@ p {
     z-index: 100;
 }
 
+#render-toggle {
+    left: 65%;
+}
+
 .projects {
-    display: none;
-    min-height: 90vh;
-    width: 100%;
+    padding-top: 2.5vh;
+    padding-right: 2.5vw;
     width: fill-available;
+    display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 2.5rem;
+    opacity: 0;
 }
 
 .project {
@@ -249,6 +254,11 @@ p {
     line-height: normal; 
     padding: 0;
     margin: 0;
+}
+
+#render-toggle:hover, #project-toggle:hover {
+
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
@@ -335,7 +345,53 @@ p {
         font-size: 1rem;
         position: fixed;
         top: 90vh;
-        left: 20vw;
+        left: 21vw;
+        width: 50vw;
+    }
+
+    .projects {
+        align-items: center;
+        align-self: center;
+        padding-bottom: 5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .project {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .project-cover {
+        height: 120%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project {
+        height: 30vh;
+        padding: 1rem;
+    }
+
+    .project-left, .project-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+    .project-cover {
+        display: none;
+    }
+
+    #project-toggle, #render-toggle {
+        font-size: 1rem;
+        position: fixed;
+        top: 90%;
+        left: 21vw;
         width: 50vw;
     }
 }
